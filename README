@@ -1,0 +1,41 @@
+Projeto Final 
+
+# Exercício
+
+
+Efetuar o clone do repositório:
+
+
+https://github.com/LeonardoDG2084/iaac_slacko-api.git
+
+
+Criar um playbook que será capaz de instalar a aplicação acima, no servidor chamado "server".
+
+
+Esse playbook deve ter as seguintes propriedades:
+
+
+**1** - Ser idempotente, ou seja, o plabook deve ser executado varias vezes sem alterar quaisquer características já presentes no servidor.
+
+
+**2** - A aplicação devera ter a capacidade de iniciar junto com o servidor em caso de reboot.(modulo systemd)
+
+
+**3** - A instalação do mongodb pode ser via docker ou instalação usando os repositórios do próprio sistema operacional. (modulo apt ou docker_container)
+
+
+**4** - A aplicação deve estar disponível assim que o playbook acabar (python3 -m pip install -r requeriments.txt)
+
+
+**5** - Após a instalação e start da aplicação deve-se efetuar um teste em algum endpoint da aplicação. (modulo shell ou command, executando o comando curl)
+
+
+**6** - Efetuar a instalação do mongo-express na sua versão docker. (imagem: mongo-express:0.54.0) (modulo docker_container)
+   
+**7** - Se utilizando de Tags executar o playbook que seja capaz de atualizar a aplicação e efetuar o restart.
+
+
+**8** - O local de instalação deve-ser parametrizavel, na documentação ele pede que seja em /opt/slacko-api/ (modulo - fileinline)
+
+
+**Obs:** A nota máxima será obtida ao atingir todos os objetivos.
